@@ -2,7 +2,7 @@
   <img src="./assets/svg/logo.svg" />
 </p>
 
-# Proyecto GREENLIVE LATAM
+<h1 align="center">Proyecto  Greenlive Latam</h1>
 
 ## Estructura actual de archivos
 
