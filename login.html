@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenlive Latam | Login</title>
+    <link rel="shortcut icon" href="./assets/svg/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <img id="logo" src="./assets/svg/logo.svg" />
+        <form id="login-form" action="" method="POST">
+            <div class="input-field">
+                <input type="text" name="user" id="user" placeholder="" required>
+                <span class='floating-label' for="user">Usuario</span>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="" required>
+                <span class='floating-label' for="password">Contraseña</span>
+            </div>
+            <input class="green-button" type="submit" value="Login">
+        </form>
+        <a href="">¿Olvidaste tu contraseña?</a>
+        <p>Crear cuenta o registrate con:</p>
+        <div class="social-container">
+            <a class='social-rounded-button' href="./google">
+                <img src="./assets/svg/google.svg" />
+            </a>
+            <a class='social-rounded-button' href="./instagram">
+                <img src="./assets/svg/instagram.svg" />
+            </a>
+            <a class='social-rounded-button' href="./meta">
+                <img src="./assets/svg/meta.svg" />
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

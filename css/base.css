@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap');
+:root {
+  --green-light: #53c451;
+  --green-dark: #0f8801;
+  --gray-light: #e4eeed;
+  --normal-radius: 1rem;
+}
+* {
+  color: var(--green-dark);
+  font-family: Inter;
+}
+/* Esto corresponde a la animacion para el campo
+de texto sea contraseña o usuario, puede ser
+reusado en los demas campos o sobreescrito */
+.input-field {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: ;
+}
+.input-field > input {
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  border: 0px;
+  background-color: var(--gray-light);
+  border-radius: var(--normal-radius);
+}
+.input-field > input:focus ~ .floating-label,
+.input-field > input:not(:focus):valid ~ .floating-label {
+  top: 1px;
+  bottom: 10px;
+  font-size: 11px;
+  opacity: 1;
+}
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: 0.2s ease all;
+}
+/* boton de login que puede ser aplicado a otros botones */
+
+.green-button {
+  width: 60%;
+  height: 2.5rem;
+  text-align: center;
+  border: 0px;
+  background-color: var(--green-light);
+  border-radius: var(--normal-radius);
+  color: white;
+}
